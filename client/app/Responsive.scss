@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+  .container {
+    padding: 50px;
+    h1 {
+      font-size: 14px;
+      color: whitesmoke;
+    }
+    .social {
+      width: 160px;
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .container {
+    padding: 60px;
+    h1 {
+      font-size: 24px;
+      color: #bcbcbc;
+    }
+    .social {
+      width: 160px;
+    }
+  }
+}
