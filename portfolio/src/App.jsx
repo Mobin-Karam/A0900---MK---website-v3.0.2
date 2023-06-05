@@ -9,6 +9,10 @@ import {
 } from "react-router-dom";
 // it should use React Router Dom
 import "./dist/main.css";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
@@ -40,7 +44,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <div className="app">
-      <div className="container">
+      <div className="Container">
         <RouterProvider router={router} />
       </div>
     </div>
