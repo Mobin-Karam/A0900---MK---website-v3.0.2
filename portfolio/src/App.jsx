@@ -13,6 +13,11 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Dashboard from "./pages/Dashboard";
+import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+import About from "./pages/About";
+import Services from "./pages/Services";
 
 const Layout = () => {
   return (
@@ -33,11 +38,31 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/work",
+        element: <Work />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
     ],
   },
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
   },
 ]);
 
