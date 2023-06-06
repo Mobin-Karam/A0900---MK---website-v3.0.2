@@ -16,24 +16,20 @@ const Navbar = () => {
         <Link className="Link Logo" to={"/"}>
           <h1 className="LogoText">Mobin.dev</h1>
         </Link>
-        <div className="Navbar"> 
-          <Link className="Link" to={"/"}>
+        <div className="Navbar">
+          <Link className="Items Link" to={"/"}>
             <span className="item">Home</span>
           </Link>
-          <select className="DropDown">
-            <option value="">Work</option>
-            <option value="work-2">Work-2</option>
-            <option value="work-3">Work-3</option>
-            <option value="work-4">Work-4</option>
-            <option value="work-5">Work-5</option>
-          </select>
-          <Link className="Link" to={"/about"}>
+          <Link to={"/work"}>
+            <option value="work">Work</option>
+          </Link>
+          <Link className="Items Link" to={"/about"}>
             <span className="item">About</span>
           </Link>
-          <Link className="Link" to={"/projects"}>
+          <Link className="Items Link" to={"/projects"}>
             <span className="item">Projects</span>
           </Link>
-          <Link className="Link" to={"/services"}>
+          <Link className="Items Link" to={"/services"}>
             <span className="item">Services</span>
           </Link>
         </div>
