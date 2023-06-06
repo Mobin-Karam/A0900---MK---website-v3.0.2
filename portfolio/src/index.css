@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .app {
-    @apply w-full h-screen py-10px px-40px bg-red-950 flex items-center justify-center;
-  }
-
   .Container {
-    @apply w-full h-full bg-slate-100 flex items-center justify-between flex-col flex-nowrap;
+    @apply w-full min-h-screen flex items-center justify-between flex-col flex-nowrap;
   }
 
   .LogoText {
@@ -16,15 +12,45 @@
   }
 
   .Btn {
-    @apply py-10px px-20px border border-black border-solid;
+    @apply w-130px py-8px px-14px border border-black border-solid;
   }
 
   .Btn:hover {
-      @apply bg-black text-white;
+    @apply bg-black text-white;
   }
 
   .Navbar {
     @apply w-full flex items-center justify-center flex-row flex-nowrap;
+  }
+
+  .Items {
+    @apply mx-10px;
+  }
+
+  .Home {
+    @apply w-full;
+  }
+
+  .Center {
+    @apply w-full h-full px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20;
+  }
+
+  .works {
+    @apply w-full grid gap-8 lg:grid-cols-3 sm:gap-20 max-lg:grid-cols-2;
+  }
+
+  .project {
+    @apply border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md;
+  }
+  .img img {
+    @apply object-cover w-full h-64;
+  }
+  .content {
+    @apply p-5 flex flex-col bg-white flex-1;
+  }
+
+  .workNav {
+    @apply justify-between w-full h-10 flex items-center flex-row flex-nowrap px-100px py-30px;
   }
 }
 
