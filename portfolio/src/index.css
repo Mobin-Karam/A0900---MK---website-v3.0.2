@@ -20,7 +20,7 @@
   }
 
   .Navbar {
-    @apply w-full flex items-center justify-center flex-row flex-nowrap;
+    @apply w-full flex  items-center justify-center flex-row flex-nowrap;
   }
 
   .Items {
@@ -56,7 +56,7 @@
 
 @layer base {
   .Nav {
-    @apply w-full h-80px p-10px bg-transparent flex items-center justify-between flex-row flex-nowrap;
+    @apply w-full h-80px bg-slate-200 p-10px flex items-center justify-between flex-row flex-nowrap;
   }
 
   .Link {
