@@ -3,19 +3,22 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 
 const About = () => {
-  const state = useLocation().state;
-  const [user, setUser] = useState([]);
+  const [country, setCountry] = useState([]);
   // const [value, setValue] = useState(state?.username || "");
-  const username = document.getElementById("username");
-  // username.ariaValueMax
+  // const username = document.getElementById("username");
+  // Octokit.js
+  // https://github.com/octokit/core.js#readme
 
   // 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
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`https://api.github.com/users/${username}`);
-        setUser(res.data);
-        // console.log(res.data);
+        // const res = await axios.get("https://api.github.com/users/Mobin-Karam");
+        const res = await axios.get(
+          "https://restcountries.com/v3.1/name/american?fullText=true"
+        );
+        setCountry(res.data);
+        console.log(res.data);
       } catch (err) {
         console.log(err);
       }
@@ -58,7 +61,7 @@ const About = () => {
 
   return (
     <>
-      <div className="about" id="about">
+      {/* <div className="about" id="about">
         <input
           className="w-500px h-50px p-10px text-white bg-slate-500 mb-10px"
           type="search"
@@ -79,7 +82,6 @@ const About = () => {
           </div>
           <div className="">{user.bio}</div>
           <div className="">{user.public_repos}</div>
-
           <div className="flex items-center justify-between flex-row flex-nowrap">
             <div className="bg-slate-800 rounded-full px-16px py-5px text-lg inline-block text-white mr-10px">
               Followers : {user.followers}
@@ -89,7 +91,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
